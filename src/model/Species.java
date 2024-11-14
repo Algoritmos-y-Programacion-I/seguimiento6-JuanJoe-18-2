@@ -6,10 +6,8 @@ public class Species {
 	private String scientificName;
 
 	public Species(String name, String scientificName) {
-
 		this.name = name;
 		this.scientificName = scientificName;
-
 	}
 
 	public String getName() {
@@ -28,4 +26,8 @@ public class Species {
 		this.scientificName = scientificName;
 	}
 
+	@Override
+	public String toString() {
+		return "Species [ Name: " + name + ", Scientific Name: " + scientificName  ;
+	}
 }
